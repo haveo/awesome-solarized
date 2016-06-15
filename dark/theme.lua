@@ -8,8 +8,8 @@
 
 -- {{{ Main
 theme = {}
+theme.lain_icons = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/default/"
 theme.default_themes_path = "/usr/share/awesome/themes"
-theme.wallpaper_cmd = { "awsetbg "..theme.default_themes_path.."/zenburn/zenburn-background.png" }
 theme.colors = {}
 theme.colors.base3   = "#002b36ff"
 theme.colors.base2   = "#073642ff"
@@ -30,7 +30,7 @@ theme.colors.green   = "#859900ff"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "Terminus 9"
+theme.font      = "Deja Vu Sans Mono 9"
 
 -- {{{ Colors
 theme.fg_normal  = theme.colors.base02
@@ -43,9 +43,13 @@ theme.bg_urgent  = theme.colors.red
 theme.bg_systray = theme.bg_normal
 -- }}}
 
+-- {{{ Gaps
+theme.useless_gap_width = 24
+-- }}}
+
 -- {{{ Borders
-theme.border_width  = "2"
-theme.border_normal = theme.bg_normal
+theme.border_width  = "4"
+theme.border_normal = theme.colors.base2
 theme.border_focus  = theme.bg_focus
 theme.border_marked = theme.bg_urgent
 -- }}}
@@ -81,6 +85,7 @@ theme.menu_submenu_icon      = theme.default_themes_path.."/default/submenu.png"
 -- }}}
 
 -- {{{ Layout
+theme.layout_centerfair = theme.lain_icons .. "centerfairw.png"
 theme.layout_tile       = theme.default_themes_path.."/zenburn/layouts/tile.png"
 theme.layout_tileleft   = theme.default_themes_path.."/zenburn/layouts/tileleft.png"
 theme.layout_tilebottom = theme.default_themes_path.."/zenburn/layouts/tilebottom.png"
