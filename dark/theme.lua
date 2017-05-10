@@ -30,7 +30,7 @@ theme.colors.green   = "#859900ff"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "Deja Vu Sans Mono 9"
+theme.font      = "Inconsolata 10.5"
 
 -- {{{ Colors
 theme.fg_normal  = theme.colors.base02
